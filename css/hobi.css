@@ -1,0 +1,61 @@
+.navbar .nav-ex a {
+  color: white;
+  margin: 0 8px;
+}
+.navbar .nav-ex a:hover {
+  color: #07377a;
+}
+.hobi {
+  padding: 110px 7% 25px;
+  background-image: url(/gambar/baground-uts.avif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+}
+.hobi .judul {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.hobi .jenis {
+  display: flex;
+  justify-content: center;
+  padding: 0px 17px;
+}
+.hobi .jenis .mancing {
+  background-color: #07377a;
+  border-radius: 20px;
+  margin: 5px 20px;
+}
+.hobi .jenis p {
+  text-align: justify;
+  display: flex;
+}
+.hobi .jenis .bertanam {
+  background-color: #07377a;
+  border-radius: 20px;
+  margin: 5px 20px;
+}
+.hobi .jenis .berenang {
+  background-color: #07377a;
+  border-radius: 20px;
+  margin: 5px 20px;
+}
+.hobi .jenis h1 {
+  text-align: center;
+}
+.hobi .jenis img {
+  height: 350px;
+  width: 265px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  justify-items: center;
+}
+.hobi .jenis img:hover {
+  transform: scale(1.1);
+}
+.hobi .jenis img::after {
+  transform: scale(1);
+}

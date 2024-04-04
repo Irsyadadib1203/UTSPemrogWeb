@@ -1,0 +1,37 @@
+.navbar .nav-ex a {
+  color: white;
+  margin: 0 8px;
+}
+.navbar .nav-ex a:hover {
+  color: #07377a;
+}
+.about {
+  padding: 110px 7% 25px;
+  background-image: url(/gambar/baground-uts.avif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+}
+.about .judul {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.about .img img {
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+.about .isi {
+  background-color: #07377a;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  padding: 15px 25px;
+  border-radius: 30px;
+}

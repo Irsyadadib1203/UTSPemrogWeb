@@ -1,0 +1,110 @@
+* {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  /* background-image: url("/gambar/baground.jpg"); */
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: #010101;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.8);
+  padding: 23px 4%;
+  border-bottom: 1px solid #07377a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  font-style: italic;
+}
+.logo span {
+  color: blue;
+}
+.navbar .nav a {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.navbar .nav a:hover {
+  color: #07377a;
+}
+.navbar .nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #07377a;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .nav a:hover::after {
+  transform: scaleX(1);
+}
+.navbar .nav-ex a {
+  color: white;
+  margin: 0 8px;
+}
+.navbar .nav-ex a:hover {
+  color: #07377a;
+}
+.content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(/gambar/baground-uts.avif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 3%,
+    rgba(255, 255, 255, 0) 25%
+  );
+}
+.content .isi-content {
+  padding: 20px 8%;
+  max-width: 1000px;
+}
+.content .isi-content h1 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.content .isi-content p {
+  font-size: 28px;
+  margin-top: 16px;
+  line-height: 30px;
+  font-weight: 200;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+.content .isi-content .action {
+  margin-top: 16px;
+  display: inline-block;
+  padding: 16px 50px;
+  font-size: 25px;
+  color: white;
+  background-color: #07377a;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0, 5);
+}
