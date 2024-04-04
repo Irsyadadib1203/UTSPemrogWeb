@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/pendaftaran.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">ilmumahal.<span>pnm</span></a>
+      <div class="nav">
+        <a href="index.html">home</a>
+        <a href="tentangsaya.html">Tentang Saya</a>
+        <a href="jadwal.html">Jadwal Perkuliahan</a>
+        <a href="hobi.html">Hobi</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+      </div>
+      <div class="nav-ex">
+        <a href="profil.html" id="user"><i data-feather="user"></i></a>
+      </div>
+    </nav>
+    <div class="pendaftaran">
+      <div class="judul">
+        <h1>PENDAFTARAN</h1>
+      </div>
+      <div class="table">
+        <form>
+          <fieldset>
+            <legend>Pendaftaran Akun</legend>
+            <table width="100%">
+              <tr>
+                <td><label for="name">Nama Lengkap: </label></td>
+                <td width="80%"><input type="text" name="name" id="name" /></td>
+              </tr>
+              <tr>
+                <td><label for="ttl">Tempat/Tanggal Lahir:</label></td>
+                <td>
+                  <input for="text" id="ttl" name="ttl" /> /
+                  <input
+                    type="number"
+                    id="tgl_lahir"
+                    name="tgl_lahir"
+                    min="1"
+                    max="31"
+                    placeholder="Tanggal"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="bln_lahir"
+                    name="bln_lahir"
+                    min="1"
+                    max="12"
+                    placeholder="Bulan"
+                    required
+                  />
+                  <input
+                    type="number"
+                    id="thn_lahir"
+                    name="thn_lahir"
+                    min="1900"
+                    max="2099"
+                    placeholder="Tahun"
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="agama">Agama:</label></td>
+                <td>
+                  <select id="agama" name="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Konghucu">Konghucu</option></select
+                  ><br />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="jeniskelamin">Jenis Kelamin:</label></td>
+                <td>
+                  <select id="jeniskelamin" name="jeniskelamin">
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option></select
+                  ><br />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="notelp">No. Telp:</label></td>
+                <td><input type="text" id="notelp" name="notelp" /></td>
+              </tr>
+              <tr>
+                <td><label for="namasekolah">Nama Sekolah Asal:</label></td>
+                <td>
+                  <input type="text" id="namasekolah" name="namasekolah" />
+                </td>
+              </tr>
+              <tr>
+                <td><label for="jurusan">Jurusan Dipilih:</label></td>
+                <td>
+                  <select id="jurusan" name="jurusan">
+                    <option value="Teknik Komputer Kontrol">
+                      Teknik Komputer Kontro
+                    </option>
+                    <option value="Teknik Listrik">Teknik Listrik</option>
+                    <option value="Teknik Mesin">Teknik Mesin</option>
+                    <option value="Teknologi Informasi">
+                      Teknologi Informasi
+                    </option>
+                    <option value="Perkeretaapian">Perkeretaapian</option>
+                    <option value="Akutansi">Akutansi</option>
+                    <option value="Komputerisasi Akutansi">
+                      Komputerisasi Akutansi
+                    </option>
+                    <option value="Administrasi Bisnis">
+                      Administrasi Bisnis
+                    </option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <br />
+            <table width="100%">
+              <tr>
+                <td width="50%" align="right">
+                  <input class="daftar" type="submit" value="DAFTAR" />
+                </td>
+                <td width="50%">
+                  <input class="batal" type="reset" value="BATAL" />
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
